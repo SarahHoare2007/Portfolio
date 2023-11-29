@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah Hoare Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Great+Vibes&display=swap" rel="stylesheet"> 
+    <style>
+      
+      @import url("styles.css");
+        /*weird blue background bit*/
+        .color {
+            background-color: rgba(18, 100, 125, 1);
+            width: 100%;
+            height: 700px; 
+            border-bottom-right-radius: 100px;
+            border-bottom-left-radius: 100px;
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper {
+    display:flex;
+    flex-direction: row;
+}
+        /* headings*/
+       
+        .work-title {
+            font-family: Dancing Script, cursive ;
+            font-size: 3em;
+            color: aliceblue;
+            text-align: center;
+            margin-top: 150px;
+        }
+        .name {
+            padding-right: 1.5em;
+            padding: 10px;
+           font-size: 1.5em;
+           font-family: Great Vibes, cursive;
+           margin-top: 50px;
+        }
+        .look {
+            font-size: 1.5em;
+            color: aliceblue;
+            text-align: center;
+            margin-top: 200px;
+           padding: 30px
+        }
+
+        /*squares*/
+        .FAsquare {
+            background-color: gray;
+            width: 350px;
+            height:250px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .GDsquare {
+            background-color: gray;
+            width: 350px;
+            height:250px;
+            text-align: center;
+        }
+        .grid-item p{
+            font-size: 3em;
+        }
+        .Gillustrations {
+            background-color: gray;
+            width: 350px;
+            height:250px;
+            text-align: center;
+        }
+        p a{
+            text-decoration: none;
+            color:black;
+            font-size: 50px;
+        }
+        .main img {
+            padding: 20px
+        }
+        
+        /*staggered sqaures-
+       
+        .GDsquare {
+            position:absolute;
+          left: 35%;
+          transform: translateX(-50%);
+            top: 1300px
+        }
+        
+        .Gillustrations {
+          position:absolute;
+          left: 65%;
+          transform: translateX(-50%);
+          top: 1600px;
+        }
+        .Gillustrations p {
+            padding-top: 250px;
+        } */
+        .main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .grid-item {
+        padding-bottom: 30px;
+        width: 350px;
+        text-align: center;
+        }
+        @media (min-width: 600px) {
+            .look {
+                font-size: 2em;
+                margin-top: 300px;
+            }
+            .name {
+                font-size: 2em
+            }
+        } 
+        @media (min-width: 800px) {
+            .FAsquare {
+                color: gray;
+               /*attempt to stagger squares*/
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+    <a href="Portfolio.html"><img src="circle.svg" alt="logo" width="45"></a>
+   <ul class="search" id="nav">
+        <li><a href="AboutMe.html">About Me</a></li>
+        <li><a href="Resume.html">Resume</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+    </ul></header>
+<div class="wrapper"><div class="color">
+    <h2 class="work-title">Graphic designer &amp; Artist</h2>
+    <div class="look">View some of my projects below!</div></div>
+    <div class="name"><h1>Sarah Hoare</h1>
+        <h1>Portfolio</h1></div></div>
+
+       <div class="main" >
+       <div class="grid"> <div class="grid-item"><div class="FAsquare">
+    </div><p><a href="./Projects.html#fine-arts">Fine Arts</a> </p></div>
+
+    <div class="grid-item"><div class="GDsquare"><img src="images/coffee.png" alt="coffee logo">
+    </div> <p><a href="./Projects.html#graphic-design">Graphic Design Work</a></p></div>
+    
+    <div class="grid-item"><div class="Gillustrations"><img src="images/Leaf.png" alt="leaf"></a>  
+    </div><p><a href="./Projects.html#graphic-illustrations">Graphic Illustrations</a></p></div></div></div>
+       
+        <footer class="footer">
+            <ul class="footer-links">
+                <li><a href="Portfolio.html">Home</a></li>
+                <li><a href="Resume.html">Resume</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+                <li><a href="AboutMe.html">About Me</a></li>
+            </ul>
+            <ul class="footer-social">
+                <li><a href="instagram-link">Instagram name</a></li>
+                <li><a href="linkdln-link">Linkdln name</a></li>
+                <li><a href="Facebook-link">Facebook name</a></li>
+                <li><address>shoare@nic.edu</address></li>
+            </ul>
+        </footer>
+    
+</body>
+
+</html>
