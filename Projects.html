@@ -15,13 +15,14 @@
         align-items: center;
      }
      .box {
-            background-color: gray;
+            background-color:whitesmoke;
             width: 350px;
             height:250px;
             text-align: center;
             font-size: 50px;
             margin: 35px;
             justify-content: center;
+
         }
         /*text stuff*/
         h1 {
@@ -33,8 +34,14 @@
             font-size: 2em;
             text-align: center;
         }
-        .main img {
+        .main {
             padding: 20px
+        }
+        @media (min-width: 1200px) {
+            #FA, #GD, #GI  {
+                flex-direction: row;
+                justify-content: center;
+            }
         }
         </style>
 </head>
@@ -63,15 +70,15 @@
 </div>
 <div id="graphic-design" class="name">Graphic design work</div>
 <div id="GD">
-            <div class="box square1"><img src="images/coffee.png" alt="coffee logo"></div>
-            <div class="box square2"></div>
-            <div class="box square3"></div>
+            <div class="box square1"><img src="images/coffee.png" alt="coffee logo" height="250"></div>
+            <div class="box square2"><img src="images/Recipe.png" alt="recipe sheet" width="350" height="250"></div>
+            <div class="box square3"><img src="images/onepage.png" alt="one sheet" width="350" height="250"></div>
  </div>
  <div id="graphic-illustrations" class="name">Graphic illustrations</div>
  <div id="GI">
-    <div class="box square1"><img src="images/Leaf.png" alt="leaf"></div>
-    <div class="box square2"><img src="images/candle.png" alt="candle"></div>
-    <div class="box square3"><img src="images/jellyfish.png" alt="jellyfish"></div>
+    <div class="box square1"><img src="images/monogram.png" alt="monogram" width="350" height="250"></div>
+    <div class="box square2"><img src="images/pattern.png" alt="pattern" width="350" height="250"></div>
+    <div class="box square3"><img src="images/jellyfish.png" alt="jellyfish" width="350" height="250"></div>
 </div>
         </div>
         
@@ -85,10 +92,10 @@
                 <li><a href="AboutMe.html">About Me</a></li>
             </ul>
             <ul class="footer-social">
-                <li><a href="instagram-link">Instagram name</a></li>
+                <li><a href="https://instagram.com/lots_of_craft?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">lots_of_craft</a></li>
                 <li><a href="linkdln-link">Linkdln name</a></li>
                 <li><a href="Facebook-link">Facebook name</a></li>
-                <li><address>shoare@nic.edu</address></li>
+                <li><a href="mailto:shoare@nic.edu">shoare@nic.edu</a></li>
             </ul>
         </footer>
 </body>
