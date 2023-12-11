@@ -78,9 +78,11 @@ header li a:hover {
     }
     .footer li a:hover {
         background-color: rgb(8, 62, 78);
+        height: 20px;
     }
     .footer li a {
-        color:aliceblue
+        color:aliceblue;
+        text-decoration: none;
     }
     .footer-links{
         height: 100px; 
