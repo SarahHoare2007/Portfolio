@@ -7,76 +7,87 @@
     <title>Sarah Hoare Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Great+Vibes&display=swap" rel="stylesheet"> 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Great+Vibes&display=swap"
+        rel="stylesheet">
     <style>
-      
-      @import url("styles.css");
+        @import url("styles.css");
+
         /*weird blue background bit*/
         .color {
             background-color: rgba(18, 100, 125, 1);
             width: 100%;
-            height: 700px; 
+            height: 700px;
             border-bottom-right-radius: 100px;
             border-bottom-left-radius: 100px;
             margin: 0;
             padding: 0;
         }
+
         .wrapper {
-    display:flex;
-    flex-direction: row;
-}
+            display: flex;
+            flex-direction: row;
+        }
+
         /* headings*/
-       
+
         .work-title {
-            font-family: Dancing Script, cursive ;
+            font-family: Dancing Script, cursive;
             font-size: 3em;
             color: aliceblue;
             text-align: center;
             margin-top: 150px;
         }
+
         .name {
             padding-right: 1.5em;
             padding: 10px;
-           font-size: 1.5em;
-           font-family: Great Vibes, cursive;
-           margin-top: 50px;
+            font-size: 1.5em;
+            font-family: Great Vibes, cursive;
+            margin-top: 50px;
         }
+
         .look {
             font-size: 1.5em;
             color: aliceblue;
             text-align: center;
             margin: 0;
-           Padding: 80px
+            Padding: 80px
         }
 
         /*squares*/
         .FAsquare {
-            background-color:whitesmoke;
+            background-color: whitesmoke;
             width: 350px;
-            height:250px;
+            height: 250px;
             text-align: center;
             margin-top: 50px;
         }
+
         .GDsquare {
             background-color: whitesmoke;
             width: 350px;
-            height:250px;
+            height: 250px;
             text-align: center;
         }
-        .grid-item p{
+
+        .grid-item p {
             font-size: 3em;
         }
+
         .Gillustrations {
             background-color: whitesmoke;
             width: 350px;
-            height:250px;
+            height: 250px;
             text-align: center;
         }
-        p a{
+
+        p a {
             text-decoration: none;
-            color:rgba(18, 100, 125, 1);
+            color: rgba(18, 100, 125, 1);
             font-size: 50px;
         }
+
         .main {
             display: flex;
             flex-direction: column;
@@ -85,79 +96,109 @@
             width: 100%;
             padding: 20px
         }
+
         .grid-item {
-        padding-bottom: 30px;
-        width: 350px;
-        text-align: center;
+            padding-bottom: 30px;
+            width: 350px;
+            text-align: center;
         }
+
         @media (min-width: 600px) {
             .look {
                 font-size: 2em;
             }
+
             .name {
                 font-size: 2em
             }
-        } 
+        }
+
         @media (min-width: 950px) {
-             .s1, .s3 {
-               margin-left: 80%;
-               margin-right: 30%;
+
+            .s1,
+            .s3 {
+                margin-left: 80%;
+                margin-right: 30%;
             }
+
             .s2 {
-               margin: -10em 60% -10em 40%;
+                margin: -10em 60% -10em 40%;
             }
+
             .work-title {
                 font-size: 5em;
             }
         }
+
         /*add hover to logo and copyright info*/
     </style>
 </head>
 
 <body>
     <header>
-    <a href="index.html"><img src="circle.svg" alt="logo" width="45"></a>
-   <ul class="search" id="nav">
-        <li><a href="AboutMe.html">About Me</a></li>
-        <li><a href="Resume.html">Resume</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="Projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact Me</a></li>
-    </ul></header>
-<div class="wrapper"><div class="color">
-    <h2 class="work-title">Graphic designer <br> &amp; Artist</h2>
-    <div class="look">View some of my projects below!</div></div>
-    <div class="name"><h1>Sarah <br>Hoare <br>Portfolio</h1></div></div>
+        <a href="index.html"><img src="logo.svg" alt="logo" width="100"></a>
+        <ul class=" search" id="nav">
+            <li><a href="AboutMe.html">About Me</a></li>
+            <li><a href="Resume.html">Resume</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </header>
+    <div class="wrapper">
+        <div class="color">
+            <h2 class="work-title">Graphic designer <br> &amp; Artist</h2>
+            <div class="look">View some of my projects below!</div>
+        </div>
+        <div class="name">
+            <h1>Sarah <br>Hoare <br>Portfolio</h1>
+        </div>
+    </div>
 
-       <div class="main" >
-        <a href="./Projects.html#fine-arts"><div class="grid-item s1"><div class="FAsquare"><img src="images/Eye.jpg" alt="eye" width="350"></a>
-    </div><p><a href="./Projects.html#fine-arts">Fine Arts</a> </p></div>
+    <div class="main">
+        <a href="./Projects.html#fine-arts">
+            <div class="grid-item s1">
+                <div class="FAsquare"><img src="images/Eye.jpg" alt="eye" width="350">
+        </a>
+    </div>
+    <p><a href="./Projects.html#fine-arts">Fine Arts</a> </p>
+    </div>
 
     <div class="grid-item s2">
-        <a href="./Projects.html#graphic-design"><div class="GDsquare"><img src="images/coffee.png" alt="coffee logo"></a>
-    </div> <p><a href="./Projects.html#graphic-design">Graphic Design Work</a></p></div>
-    
+        <a href="./Projects.html#graphic-design">
+            <div class="GDsquare"><img src="images/coffee.png" alt="coffee logo">
+        </a>
+    </div>
+    <p><a href="./Projects.html#graphic-design">Graphic Design Work</a></p>
+    </div>
+
     <div class="grid-item s3">
-        <a href="./Projects.html#graphic-illustrations"><div class="Gillustrations"><img src="images/monogram.png" alt="Monogram"></a>  
-    </div><p><a href="./Projects.html#graphic-illustrations">Graphic Illustrations</a></p></div></div>
-       
-        <footer class="footer">
-            <ul class="footer-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Resume.html">Resume</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="Projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-                <li><a href="AboutMe.html">About Me</a></li>
-            </ul>
-            <ul class="footer-social">
-                <li><a href="https://instagram.com/lots_of_craft?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">lots_of_craft</a></li>
-                <li><a href="linkdln-link">Sarah H</a></li>
-                <li><a href="Facebook-link">Facebook name</a></li>
-                <li><a href="mailto:shoare@nic.edu">shoare@nic.edu</a></li>
-            </ul>
-        </footer>
-    
+        <a href="./Projects.html#graphic-illustrations">
+            <div class="Gillustrations"><img src="images/monogram.png" alt="Monogram">
+        </a>
+    </div>
+    <p><a href="./Projects.html#graphic-illustrations">Graphic Illustrations</a></p>
+    </div>
+    </div>
+
+    <footer class="footer">
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Resume.html">Resume</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="AboutMe.html">About Me</a></li>
+        </ul>
+        <ul class="footer-social">
+            <li><a href="https://instagram.com/lots_of_craft?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">lots_of_craft</a>
+            </li>
+            <li><a href="linkdln-link">Sarah H</a></li>
+            <li><a href="Facebook-link">Facebook name</a></li>
+            <li><a href="mailto:shoare@nic.edu">shoare@nic.edu</a></li>
+        </ul>
+    </footer>
+
 </body>
 
 </html>

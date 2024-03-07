@@ -1,119 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fox</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
-        <style>
-     @import url("styles.css");
-     hr {
-        margin: 2em 0 .5em 0;
-        height: .5em;
-        background:  rgba(18, 100, 125, 1);
-        width: 100%
-     }
-     .return {
-        color:black;
-        text-decoration: none;
-        margin: .5em 0 1.5em 2em;
-        font-size: 35px;
-    }
-    .return :hover {
-        background-color: aliceblue;
-    }
-    .return :visited { 
-        color:black;
-        text-decoration-color: white;
-    }
-     .main {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-     }
-     .image {
-        display: flex;
-        justify-content: center;
-     }
-     img {
-        display: flex;
-      align-items: center;
-      margin-top: 1.5em;
-      width: 300px;
-     }
-     .container{
-        display: flex;
-        justify-content: center;
-     }
-     .descr {
-       width: 400px;
-     }
-     @media (min-width: 900px) {
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        @import url("styles.css");
+
+        hr {
+            margin: 2em 0 .5em 0;
+            height: .5em;
+            background: rgba(18, 100, 125, 1);
+            width: 100%
+        }
+
+        .return {
+            color: black;
+            text-decoration: none;
+            margin: .5em 0 1.5em 2em;
+            font-size: 35px;
+        }
+
+        .return :hover {
+            background-color: aliceblue;
+        }
+
+        .return :visited {
+            color: black;
+            text-decoration-color: white;
+        }
+
         .main {
-            flex-direction: row;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
+
+        .image {
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            display: flex;
+            align-items: center;
+            margin-top: 1.5em;
+            width: 300px;
+        }
+
         .container {
-            margin-top: 5em;
-            padding: 2em
+            display: flex;
+            justify-content: center;
         }
-        img {
-            margin-top: 5em;
+
+        .descr {
+            width: 400px;
         }
-     }
-     @media (min-width: 1200px) {
-        img {
-            width: 450px;
-            margin-right: 50px
+
+        @media (min-width: 900px) {
+            .main {
+                flex-direction: row;
+            }
+
+            .container {
+                margin-top: 5em;
+                padding: 2em
+            }
+
+            img {
+                margin-top: 5em;
+            }
         }
-        .descr{ 
-            margin-top: 2em;
+
+        @media (min-width: 1200px) {
+            img {
+                width: 450px;
+                margin-right: 50px
+            }
+
+            .descr {
+                margin-top: 2em;
+            }
         }
-     }
-     </style>
+    </style>
 </head>
+
 <body>
     <header>
-        <a href="index.html"><img src="circle.svg" alt="logo" width="45"></a>
-       <ul class="search" id="nav">
+        <a href="index.html"><img src="logo.svg" alt="logo" width="45"></a>
+        <ul class="search" id="nav">
             <li><a href="AboutMe.html">About Me</a></li>
             <li><a href="Resume.html">Resume</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="Projects.html">Projects</a></li>
             <li><a href="contact.html">Contact Me</a></li>
-        </ul></header>
-        <hr>
+        </ul>
+    </header>
+    <hr>
 
-        <div class="main">
-            <div class="return"><a href="Projects.html"> <-Return</a></div>
-           <div class="image"><img src="images/fox.png" alt="fox"></div>
-         <div class="container">
-        <div class="descr">
-           <h1>Title: Fox Mascot</h1> 
-           <p>I created this as a project for a graphic design class. The assignment was to create 
-            an animal mascot. This geometric fox was sketched and finilized in Adobe Illustrator.
-           </p>
-           </div>
-           </div>
-           </div>
+    <div class="main">
+        <div class="return"><a href="Projects.html"> <-Return< /a></div>
+        <div class="image"><img src="images/fox.png" alt="fox"></div>
+        <div class="container">
+            <div class="descr">
+                <h1>Title: Fox Mascot</h1>
+                <p>I created this as a project for a graphic design class. The assignment was to create
+                    an animal mascot. This geometric fox was sketched and finilized in Adobe Illustrator.
+                </p>
+            </div>
+        </div>
+    </div>
 
-        <footer class="footer">
-            <ul class="footer-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Resume.html">Resume</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="Projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-                <li><a href="AboutMe.html">About Me</a></li>
-            </ul>
-            <ul class="footer-social">
-                <li><a href="https://instagram.com/lots_of_craft?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">lots_of_craft</a></li>
-                <li><a href="linkdln-link">Sarah H</a></li>
-                <li><a href="Facebook-link">Facebook name</a></li>
-                <li ><a href="mailto:shoare@nic.edu">shoare@nic.edu</a></li>
-            </ul>
-        </footer>
-    
+    <footer class="footer">
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Resume.html">Resume</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="AboutMe.html">About Me</a></li>
+        </ul>
+        <ul class="footer-social">
+            <li><a href="https://instagram.com/lots_of_craft?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">lots_of_craft</a>
+            </li>
+            <li><a href="linkdln-link">Sarah H</a></li>
+            <li><a href="Facebook-link">Facebook name</a></li>
+            <li><a href="mailto:shoare@nic.edu">shoare@nic.edu</a></li>
+        </ul>
+    </footer>
+
 </body>
+
 </html>
