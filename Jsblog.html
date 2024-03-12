@@ -14,10 +14,42 @@
 
         .words {
             display: flex;
-            flex-direction: row;
             justify-content: center;
-            text-align: center;
+            text-align: left;
             font-size: large;
+            flex-direction: column;
+            margin: 100px;
+        }
+
+        p {
+            margin: 50px;
+            line-height: 2;
+        }
+
+        #react {
+            border: 3px solid darkgray;
+            color: darkgray;
+            margin: 7px;
+            padding: 5px;
+        }
+
+        #vanilla {
+            border: 3px solid darkgray;
+            color: darkgray;
+            margin: 7px;
+            padding: 5px;
+        }
+
+        .comparison {
+            margin: 0px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media (min-width: 950px) {
+            .comparison {
+                flex-direction: row;
+            }
         }
     </style>
 </head>
@@ -36,16 +68,103 @@
 
     <div class="holder">
         <div class="banner">
-            <div class="title">Publishing My Portfoilo!</div>
+            <div class="title">Comparison of vanilla JavaScript and React</div>
         </div>
     </div>
-
+    <div class="return"><a href="blog.html"> <-Return </a></div>
     <div class="words">
         <p>
-            Over the past few weeks, I have developed two simple to-do apps.
-            I created one with vanilla JavaScript and one with React.
-            While they have many similarities, there are also some drastic differences in their uses.
 
+            Over the past few weeks, I have worked on developing two simple to-do apps:
+            one with vanilla JavaScript and one with React. Although these approaches have many similarities,
+            they also have some drastic differences in their uses. Working hands-on is, I believe, the best way to
+            understand the differences between them. However, I am going to explain their differences in this article
+            today. </p>
+
+
+        <h2>What is the difference between vanilla JavaScript and React? </h2>
+
+        <p>To describe the difference in vanilla Javascript and React generally, vanilla is the core web language,
+            and React consists of libraries used for UI.
+            <br><BR>
+            Vanilla JavaScript pertains to plain JavaScript. It is used for smaller things and does not have any added
+            libraries or features.
+            It also does not contain any built-in organization systems
+
+            React is a JavaScript library that creates reusable UI components. It can be applied to whole pages and has
+            built in organization systems. React provides a structured and efficient way to
+            build complex user interfaces
+            by promoting component-based architecture, virtual DOM, and state management.
+        </p>
+
+
+
+        <h2>Comparison of structure, syntax, and organization. </h2>
+
+        <p> Vanilla JavaScript is written using core language features. Some of these features include DOM manipulation,
+            event handling, and AJAX requests.
+            As I mentioned earlier, vanilla Javascript does not have any built-in organization systems. This means that
+            developers must organize their
+            code manually to avoid having an unreadable mess of code.
+            <br><br>
+            React uses JavaScript XML (JSX), which is an extension that allows JavaScript to be written similarly to
+            HTML. Since React is a collection of libraries, it does have built-in organizational systems.
+            <br><br>
+            Vanilla directly affects the DOM, while React edits a virtual DOM. Directly editing the DOM may be helpful
+            in some scenarios, however
+            it can make sites load slower due to the amount of requests being made. Reacts virtual DOM is a more
+            lightweight version of the DOM that
+            detects when to manipulate the actual DOM to increase the page’s speed.
+        </p>
+
+        <h2>Reusability and Maintenance. </h2>
+
+        <p>One of the most prominent differences between vanilla Javascript and React that I noticed quickly upon
+            developing the two apps was that
+            React elements are far more reusable than vanilla elements. React functions are self-contained, making them
+            easier to reuse across different pages
+            and projects. This feature makes them much easier to maintain than their vanilla JavaScript counterparts.
+        </p>
+        <div class="comparison">
+            <div id="react">React delete button<img src="images/react.png" alt="React delete button code"></div>
+            <div id="vanilla">Vanilla delete button<img src="images/vanilla.png" alt="vanilla delete button code"></div>
+        </div>
+        <P> React Offers a built-in state management system
+            where each component can have its own state and get
+            modified.
+            React also integrates with libraries for more complex state management needs.
+            <br><br>
+            Vanilla JavaScript Developers have to manage state manually, often resulting in hard-to-read code or complex
+            state management solutions.
+        </p>
+
+
+
+        <h2>Learning Curve. </h2>
+
+        <p>I found learning vanilla JavaScript to be simpler than learning React. However, I know that React will be
+            easier to develop with once
+            I fully understand it since it streamlines the development process and makes it more efficient. Learning
+            vanilla first helped me with learning React
+            since they share similarities in their concepts and functionality.
+            <br><br>
+            React is easier to use for developing larger projects since it can streamline the development process and
+            make it more efficient,
+            while vanilla is easier for developing for smaller
+            projects/aspects.
+        </p>
+
+
+
+        <h2>UI Aspects</h2>
+
+        <p> In Vanilla JavaScript, developers create UI elements programmatically by using methods like
+            document.createElement() to sirectly manipulate the DOM.
+            <br><br>
+            React uses JSX, which is a syntax extension that allows developers to write HTML-like code within JavaScript
+            files. JSX makes it easier to describe
+            the structure of UI components, improves code readability, and enables a more declarative approach to
+            building user interfaces.
         </p>
     </div>
 

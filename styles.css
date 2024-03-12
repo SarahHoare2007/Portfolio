@@ -1,7 +1,7 @@
-
 .type {
     font-family: "besley" serif;
 }
+
 /*navigation bar*/
 #nav {
     font-size: .9em;
@@ -12,31 +12,53 @@
     overflow: hidden;
     background-color: white;
 }
+
 header {
     display: flex;
     flex-direction: row;
     width: 100%;
 }
+
 header img {
-padding: 20px 0 0 30px;
-margin: 0;
-height: 60px;
+    padding: 20px 0 0 30px;
+    margin: 0;
+    height: 60px;
 }
+
 .search li {
     float: left;
 }
+
 .search li a {
-    color:black;
+    color: black;
+}
+
+/*return button*/
+.return {
+    color: black;
+    text-decoration: none;
+    margin: .5em 0 1.5em 2em;
+    font-size: 35px;
+}
+
+.return :hover {
+    background-color: aliceblue;
+}
+
+.return :visited {
+    color: black;
+    text-decoration-color: white;
 }
 
 /*list things*/
- header li a {
+header li a {
     display: block;
     text-align: center;
     padding: 16px;
     text-decoration: none;
     font-style: normal;
 }
+
 header li a:hover {
     background-color: aliceblue;
 }
@@ -46,99 +68,114 @@ header li a:hover {
 .banner {
     background-color: rgba(18, 100, 125, 1);
     width: 50em;
-    height: 15em; 
+    height: 15em;
     border-radius: 100px;
     margin: 2em;
     padding: 0;
     justify-content: center;
 }
+
 .title {
     text-align: center;
-    font-family: Dancing Script, cursive ;
+    font-family: Dancing Script, cursive;
     font-size: 4em;
     color: aliceblue;
     margin-top: 1em;
 }
+
 .holder {
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-  /* footer stuff */
-  .footer {
+/* footer stuff */
+.footer {
     display: flex;
     flex-direction: column;
-    background-color: rgba(18, 100, 125, 1) ;
+    background-color: rgba(18, 100, 125, 1);
     width: 100%;
     height: 20em;
     font-size: 1.25em;
     justify-content: center;
     margin-top: 2em;
-    }
-    .footer li a:hover {
-        background-color: rgb(8, 62, 78);
-        height: 20px;
-    }
-    .footer li a {
-        color:aliceblue;
-        text-decoration: none;
-    }
-    .footer-links{
-        height: 100px; 
-        line-height: 2px;
-        width: 275px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .footer-social {
-        line-height: 2px;
-        display: flex;
-        flex-wrap: wrap;
-        width: 350px;
-        height: 75px;
-        padding-top: 25px;
-    }
-    .footer-social li{
-        display: flex;
-        align-items: center;
-        box-sizing: border-box;
-        width: 50%;
-    }
-    .footer-links li {
-        display: flex;
-        align-items: center;
-        box-sizing:border-box;
-        width: 50%;
-    }
-    .footer li {
-        text-align: center;
-        text-decoration: none;
-        white-space: nowrap;
+}
+
+.footer li a:hover {
+    background-color: rgb(8, 62, 78);
+    height: 20px;
+}
+
+.footer li a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.footer-links {
+    height: 100px;
+    line-height: 2px;
+    width: 275px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-social {
+    line-height: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+    height: 75px;
+    padding-top: 25px;
+}
+
+.footer-social li {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.footer-links li {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.footer li {
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+@media (min-width: 400px) {
+    #nav {
+        font-size: 1.25em;
     }
 
-    @media (min-width: 400px) {
-        #nav{ 
-            font-size: 1.25em;
-        }
-        header img {
-            width: 60px;
-            margin-top: 5px;
-        }
-        .footer-links {
-            margin-top: 2em;
-        }
+    header img {
+        width: 60px;
+        margin-top: 5px;
     }
-    @media (min-width: 600px)
-     { .footer 
-        { flex-direction: row;
-    height: 10em;}
-        #nav {
-            font-size: 2em;
-        }
-        header img {
-            width: 80px;
-            margin-top: 10px
-        }
 
+    .footer-links {
+        margin-top: 2em;
     }
+}
+
+@media (min-width: 600px) {
+    .footer {
+        flex-direction: row;
+        height: 10em;
+    }
+
+    #nav {
+        font-size: 2em;
+    }
+
+    header img {
+        width: 80px;
+        margin-top: 10px
+    }
+
+}
