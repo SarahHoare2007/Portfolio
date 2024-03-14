@@ -3,6 +3,12 @@
 }
 
 /*navigation bar*/
+#logo {
+    padding: 5px 0 0 5px;
+    height: 100px;
+    width: 100px;
+}
+
 #nav {
     font-size: .9em;
     list-style-type: none;
