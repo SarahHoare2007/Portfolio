@@ -12,7 +12,7 @@
     <style>
         @import url("styles.css");
         @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
-        @font-face { font-family: Chalkboard; src: url('Chalkboard-regular.ttf');}
+        @font-face { font-family: 'Chalkboard'; src: url('Chalkboard-regular.ttf');}
 
         .tan-shape {
             background-color: #FEE9DC;
@@ -29,17 +29,22 @@
             font-size: 4em;
         }
 
+        h1, h2 {
+            font-family: 'Chalkboard', sans-serif;
+            font-weight: 500;
+        }
+
         .words {
             display: flex;
             justify-content: center;
             text-align: left;
-            font-size: large;
+            font-size: 20px;
             flex-direction: column;
-            margin: 80px;
+            margin: 30px;
         }
 
         p {
-            font-family: Chalkboard, sans-serif;
+            font-family: 'Chalkboard', sans-serif;
             margin: 40px;
             line-height: 2;
             width: 80%;
@@ -50,6 +55,41 @@
         .notes {
             border: 15px solid #FEE9DC; 
             padding: 0 19px 0 10px;
+        }
+        .image p {
+            color: darkgray;
+            padding: 0;
+            margin: 0;
+        }
+    
+        .color {
+            color: #D89F80; 
+            font-size: 25px; 
+        }
+
+        hr {
+           Border: 20px dashed #D89F80;
+           width: 100%
+        }
+        .ending {
+            display: flex;
+            align-items: center;
+            font-size: 30px;
+            margin: 10px;
+        }
+
+        @media (min-width: 900px) {
+            .words {
+            margin: 80px;
+        }
+            .step {
+            display: flex;
+            align-items: center;
+        }
+        .step p {
+            margin: 40px 0 40px 40px;
+            flex-wrap: wrap;
+        }
         }
     </style>
 </head>
@@ -79,7 +119,7 @@
             recipe is among the top three most popular recipes I have shared.
             I was given this recipe many years ago by my good friend Google
             who directed me to Allrecipes. Specifically to this recipe<br>
-            <a href="https://www.allrecipes.com/recipe/244614/3-ingredient-peanut-butter-cookies/">
+            <a href="https://www.allrecipes.com/recipe/244614/3-ingredient-peanut-butter-cookies/" target="_blank" class="color">
                 https://www.allrecipes.com/recipe/244614/3-ingredient-peanut-butter-cookies/</a><br>
             Since then, I have made and eaten these cookies numerous times.
             They only require three ingredients that you likely have at home!
@@ -99,6 +139,7 @@ accidntally procrastinated on making something for an event. It only takes 3 ing
 steps, and 30 minutes. Anyone can make them!
         </p>
         <h1>Step 1:</h1>
+        <div class="step">
         <p>
             Gather your ingredients. Brave your fridge and pantry to 
 find one egg, one cup of sugar, and one cup of peanut butter.
@@ -107,6 +148,11 @@ them in a large bowl. The ingredients should look combined when
 finished. If you can see the individual ingredients, you have not 
 mixed it well. Do better, please. 
         </p>
+        <div class="image">
+            <img src="images/cookies-bowl.png" alt="mixed ingredients in bowl" width="300">
+            <p>Image: Michell Becker</p>
+        </div>
+            </div>
         <div class="notes">
             <h2>Notes:</h2>
             <p>
@@ -118,6 +164,11 @@ butter is an acceptable substitution.
             </p>
         </div>
         <h1>Step 2:</h1>
+        <div class="step">
+            <div class="image">
+                <img src="images/cookie-fork.png" alt="fork pressing cookie dough" width="300">
+                <p>Image: Preethi Venkatram</p>
+            </div>
         <p>
             Now that everything has been combined to form 
 dough, preheat the oven to 350°F. While your oven is 
@@ -130,12 +181,13 @@ burning.
 Good enough for fancy looking cookies? Use a fork to 
 lightly press a grid into the dough after flattening.
         </p>
+        </div>
         <h1>Step 3:</h1>
         <p>
             Put baking the tray into the preheated oven. Do not touch the oven with your bare 
 hands as it will be hot. (Approximately 350°F of hot. Human hands are weak.) Close the oven 
 door and let the cookies bake for 10 minutes. Take this time to clean up the crime mess you 
-have inevitably just created. If you do not, the cookies will judge you.
+have inevitably just created. If you do not, the cookies <span class="color">will</span> judge you.
         </p>
         <h1>Enjoy!</h1>
         <p>
@@ -146,12 +198,18 @@ I am in no position to tell you how to live it. Eat burning hot cookies if it wi
         <div class="notes">
             <h2>Recipe Notes:</h2>
             <p>
-                To encourage the cookies to cool faster out of the oven, you could give them words of 
-encouragement or simply remove them from the baking tray to a cooling rack or plate. Once 
-cooled you can store these cookies in an airtight container at room temperature for up to 4 
-days (give or take 4 days) or freeze them to make them last lo
+                To encourage the cookies to cool faster out of the oven, 
+                you could give them words of encouragement or simply remove
+                them from the baking tray to a cooling rack or plate. Once 
+                cooled you can store these cookies in an airtight container at 
+                room temperature for up to 4 days (give or take 4 days) or freeze them to make them last longer.
             </p>
             </div>
+            <p class="ending">
+                Here is the recipe in one nice, neat page:
+            </p>
+            <hr>
+            <img src="images/recipe-card.png" alt="recipe card">
     </div>
 
     <footer class="footer">
