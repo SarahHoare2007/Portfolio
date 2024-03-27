@@ -37,7 +37,6 @@
         }
 
         .main {
-            outline-style: solid;
             width: 85%;
             margin: 5%;
         }
@@ -49,27 +48,37 @@
         }
 
         .headshot {
-            background-color: whitesmoke;
-            width: 85%;
-            height: 500px;
-            margin: 5%;
+            margin: 15px;
         }
 
-        @media (min-width: 400px) {
+        .hold {
+            flex-direction: column;
+        }
+
+        .me {
+            width: 85%;
+        }
+
+        @media (min-width: 900px) {
             .headshot {
-                display: flex;
-                width: 200px;
-                height: 700px;
+                margin-left: 5px;
             }
 
-            /* .main {
-                width: 50%;
+            .me {
+                width: 500px;
             }
-            .holder {
+    
+            .hold {
                 display: flex;
                 flex-direction: row;
-            }*/
+                align-items: center;
         }
+
+        .main {
+           margin-right: 10px;
+           width: 50%;
+        }
+    }
     </style>
 </head>
 
@@ -102,7 +111,9 @@
                 about myself I’m supposed to say so this is a tomorrow problem.
             </p>
         </div>
-        <!-- <div class="headshot">headshot</div> -->
+        <div class="headshot">
+            <img src="images/headshot.png" alt="Me!" class="me">
+        </div>
     </div>
 
     <footer class="footer">
@@ -115,11 +126,11 @@
             <li><a href="AboutMe.html">About Me</a></li>
         </ul>
         <ul class="footer-social">
-            <li><a href="https://instagram.com/lots_of_craft?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">lots_of_craft</a>
-            </li>
-            <li><a href="linkdln-link">Sarah H</a></li>
-            <li><a href="Facebook-link">Facebook name</a></li>
-            <li><a href="mailto:shoare@nic.edu">shoare@nic.edu</a></li>
+            <li><a href="https://www.instagram.com/sarah_shoare/" 
+                target="_blank">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/sarah-h-studios/">LinkdIn</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=61556567321748">Facebook</a></li>
+            <li><a href="mailto:sarah.sh.studios@gmail.com">Email</a></li>
         </ul>
     </footer>
 </body>
