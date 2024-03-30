@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        @import url("styles.css");
+
+        hr {
+            margin: 2em 0 .5em 0;
+            height: .5em;
+            background: rgba(18, 100, 125, 1);
+            width: 100%
+        }
+
+        .return {
+            color: black;
+            text-decoration: none;
+            margin: .5em 0 1.5em 2em;
+            font-size: 35px;
+        }
+
+        .return :hover {
+            background-color: aliceblue;
+        }
+
+        .return :visited {
+            color: black;
+            text-decoration-color: white;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .image {
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            display: flex;
+            align-items: center;
+            margin-top: 1.5em;
+            width: 300px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .descr {
+            width: 400px;
+        }
+
+        @media (min-width: 900px) {
+            .main {
+                flex-direction: row;
+            }
+
+            .container {
+                margin-top: 5em;
+                padding: 2em
+            }
+
+            img {
+                margin-top: 5em;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            img {
+                width: 450px;
+                margin-right: 50px
+            }
+
+            .descr {
+                margin-top: 2em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="logo.svg" id="logo" alt="logo" width="45"></a>
+        <ul class="search" id="nav">
+            <li><a href="AboutMe.html">About Me</a></li>
+            <li><a href="Resume.html">Resume</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </header>
+    <hr>
+
+    <div class="main">
+        <div class="return"><a href="Projects.html"> <-Return <a></div>
+            <div class="container">
+        <div class="image"><img src="images/creativeinvention.png" alt="creative invention"></div>
+            <div class="descr">
+                <h1>Title: Creative Invention</h1>
+                <p>This project was an assignment in a photoshop class. 
+                   The assignment was to create an 'As seen on TV' style print ad.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Resume.html">Resume</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="AboutMe.html">About Me</a></li>
+        </ul>
+        <ul class="footer-social">
+            <li><a href="https://www.instagram.com/sarah_shoare/" 
+                target="_blank">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/sarah-h-studios/">LinkdIn</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=61556567321748">Facebook</a></li>
+            <li><a href="mailto:sarah.sh.studios@gmail.com">Email</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
